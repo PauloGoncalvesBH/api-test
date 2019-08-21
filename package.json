@@ -1,15 +1,17 @@
 {
   "name": "test-api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Repositório de testes de API com Frisby.js",
+  "author": "Paulo Gonçalves <paulorochag@hotmail.com> (https://www.linkedin.com/in/paulo-goncalves/)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/PauloGoncalvesBH/api-test.git"
+  },
   "scripts": {
     "test": "jest",
     "posttest": "allure generate --clean",
     "report": "allure open"
   },
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "jest": {
     "setupFilesAfterEnv": [
       "jest-allure/dist/setup"
