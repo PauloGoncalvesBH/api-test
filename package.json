@@ -16,6 +16,7 @@
     ]
   },
   "dependencies": {
+    "allure-commandline": "^2.9.0",
     "faker": "^4.1.0",
     "frisby": "^2.1.2",
     "jest": "^24.8.0",
