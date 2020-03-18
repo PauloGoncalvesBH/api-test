@@ -8,8 +8,7 @@
   },
   "scripts": {
     "test": "jest",
-    "posttest": "allure generate --clean",
-    "report": "allure open"
+    "report": "allure serve"
   },
   "license": "MIT",
   "jest": {
