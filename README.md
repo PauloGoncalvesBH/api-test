@@ -23,10 +23,13 @@ git clone https://github.com/PauloGoncalvesBH/api-test.git && cd api-test
 ```sh
 npm install
 ```
-## Subindo servidor REST de testes
-Siga as 2 seções do seguinte repositório (duração: menos de 5 minutos):
-1. [REST Server - Clonando e instalando as dependências](https://github.com/PauloGoncalvesBH/rest-server#clonando-e-instalando-as-dependências)
-2. [REST Server - Subindo o servidor REST](https://github.com/PauloGoncalvesBH/rest-server/blob/master/README.md#Subindo-o-servidor-REST-%5Co/)
+## Executando o ServeRest
+
+Para iniciar o _ServeRest_ envie o seguinte comando:
+
+```sh
+npx serverest
+```
 
 ## Executando os testes
 
