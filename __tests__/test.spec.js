@@ -1,4 +1,3 @@
-const faker = require('faker')
 const frisby = require('frisby')
 const Joi = frisby.Joi
 
@@ -62,11 +61,9 @@ describe('Requisições utilizando token', () => {
   })
 
   it('POST auth/registrar POST auth/login, validar endpoints de autenticação [Requisições aninhadas]', () => {
-    const newUserEmail = faker.internet.email()
-    const newUserPassword = faker.internet.password()
     json = {
-      email: newUserEmail,
-      password: newUserPassword
+      email: 'foo@bar.com',
+      password: 'foobar'
     }
     return frisby
       .post(`http://localhost:${porta}/auth/registrar`, json)
