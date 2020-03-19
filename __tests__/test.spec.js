@@ -1,3 +1,6 @@
+'use strict'
+
+const chai = require('chai')
 const frisby = require('frisby')
 const Joi = frisby.Joi
 
@@ -33,6 +36,14 @@ describe('Requisições utilizando token', () => {
       })
   })
 
+  it('GET aluno 1 pelo id, validar status e nome', async () => {
+    const idAluno = 1
+    const response = await frisby
+      .get(`http://localhost:${porta}/alunos?id=${idAluno}`)
+      .expect('status', 200)
+      chai.expect(response._json[0]).to.include({nome: 'Enzo'})
+  })
+
   it('GET turma 1, validar status e contrato', () => {
     return frisby
       .get(`http://localhost:${porta}/turmas/1`)
@@ -61,7 +72,7 @@ describe('Requisições utilizando token', () => {
   })
 
   it('POST auth/registrar POST auth/login, validar endpoints de autenticação [Requisições aninhadas]', () => {
-    json = {
+    const json = {
       email: 'foo@bar.com',
       password: 'foobar'
     }
