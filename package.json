@@ -7,7 +7,7 @@
     "url": "git://github.com/PauloGoncalvesBH/api-test.git"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest api/",
     "report": "allure serve"
   },
   "license": "MIT",
